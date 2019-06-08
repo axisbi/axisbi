@@ -1,0 +1,134 @@
+.container {
+    width: 600px;
+    padding: 50px;
+
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    ;
+    color: white;
+
+
+}
+
+.nav h3 {
+    margin-left: 20px;
+
+
+}
+
+.cabecalho {
+
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.cabecalho h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.cards-header {
+
+    padding-top: 5px;
+
+    width: 100%px;
+    height: 90px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: white;
+
+
+
+}
+
+
+
+hr {
+    color: black;
+
+}
+
+
+.grid-container {
+
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+
+    padding: 20px;
+
+
+
+}
+
+.cards-controls {
+
+    max-width: 400px;
+    width: 300px;
+    height: 100px;
+    background-color: maroon;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+
+
+}
+
+
+.cards-controls:hover {
+
+
+    /*transform: rotate(20deg);*/
+    text-decoration: none;
+    transform: scale(1.04);
+}
+
+.cards-controls:hover,
+a {
+
+
+    text-decoration: none;
+}
+
+.text-card {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container a {
+
+    color: black;
+    text-decoration: none;
+
+}
