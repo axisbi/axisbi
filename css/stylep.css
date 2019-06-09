@@ -1,0 +1,124 @@
+.fundo {}
+
+#login {
+
+
+    width: 350px;
+    height: 500px;
+    position: relative;
+    /*box-shadow: 2px 2px 2px 3px gray;*/
+    /*box-shadow: 2px 2px 2px 5px #ccc;*/
+    border-radius: 5px;
+    border: 3px solid gray;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    animation: mymove 8s infinite;
+    transition: all 0.6s ease-in;
+
+
+}
+
+@keyframes mymove {
+    50% {
+        border-color: rgba(255, 255, 255, 0);
+
+    }
+}
+
+@keyframes mybtn {
+    50% {
+        background-color: rgba(255, 255, 255, 0);
+        ;
+        color: #0079C6;
+
+    }
+
+}
+
+
+
+#login h1 {
+
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0079C6;
+
+}
+
+#login:hover h1 {
+
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0079C6;
+
+}
+
+
+#login:hover {
+    background-color: white;
+    /*transform: scale(0);*/
+    color: black;
+    opacity: 0.9;
+
+
+}
+
+#login:hover .btn {
+    background-color: #0079C6;
+    color: white;
+
+}
+
+#login .btn:hover {
+
+
+    background-color: #0079C6;
+}
+
+.pp {
+
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+
+}
+
+.imgcenter {
+
+
+
+    margin: 0 auto;
+    display: block;
+    padding-top: 15px;
+
+}
+
+#login .btn {
+
+    background-color: #0079C6;
+    color: white;
+    width: 150px;
+    font-weight: bold;
+    animation: mybtn 8s infinite;
+    text-transform: uppercase;
+
+}
+
+.btn {}
+
+input {
+
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+
+}

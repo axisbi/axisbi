@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="05787dc3-8266-48c1-9ecd-ce2b61b947aa" name="htdocs" url="http://localhost/axis">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\axis" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

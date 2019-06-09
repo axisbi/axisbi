@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylep.css">
 
     <title>Axis Analytics</title>
 
@@ -58,12 +58,11 @@ margin: 1.6em 0;
 
     </style>
 </head>
-<div class="rellax">
 
     <body class="fundo">
 
         <video class="bg_video" Autoplay muted loop src="media/fundo.mp4"></video>
-
+        <input type="button" class="btn btn-sm btn-success" id="btsair" value="  Sair  " onclick="sair()"/>
 
         <div class="container">
             <a class="links" id="paracadastro"></a>
@@ -73,12 +72,9 @@ margin: 1.6em 0;
                 <!--FORMULÁRIO DE LOGIN-->
                 <div id="login">
                     <form method="post" action="#">
-                        <h1>Acesso ao Sistema</h1>
-
                         <img class="imgcenter" src="img/logo.png" alt="logo">
                         <div class="pp">
 
-                            <hr>
                             <p>
                                 <input id="nome_usuario" name="nome_usuario" required="required" type="text" placeholder="LOGIN" />
                             </p>
@@ -86,11 +82,12 @@ margin: 1.6em 0;
                             <p>
                                 <input type="password" id="nome_senha" name="nome_senha" required="required" placeholder="SENHA" />
                             </p>
-<br>
-                            <div id="bla"></div>
+                            <text id="bla"></text>
 
                             <p>
                                 <input class="btn" type="submit" value="Acessar" onclick="return logar();" />
+                                <br>
+                                <a href="#">Equeci a minha senha.</a>
                             </p>
                         </div>
                     </form>
@@ -98,9 +95,6 @@ margin: 1.6em 0;
                 </div>
             </div>
         </div>
-
-</div>
-
 </body>
 
 
@@ -129,18 +123,21 @@ margin: 1.6em 0;
 
             success: function(result){
                 if(result != 'ERRO'){
-                    window.location.replace("controls.php");
+                    window.location.replace("painel/index.php");
                 } else {
                     $("#bla").html('');
-                    $("#bla").append("Usuário ou senha inválido!");
+                    $("#bla").append("Usuário ou senha inválido! <br>");
+                    $("#bla").append("<br>");
+                    $("#bla").css({color:"red"});
+
                 }
 
             },
             beforeSend: function(){
-                $('#bla').css({display:"block"});
+
             },
             complete: function(msg){
-                $('#bla').css({display:"none"});
+
             }
 
         });
@@ -150,4 +147,12 @@ margin: 1.6em 0;
 
     }
 </script>
+
+<script>
+    function sair() {
+        window.location.replace("index.html");
+    }
+</script>
+
+
 </html>
